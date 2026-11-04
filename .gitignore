@@ -44,3 +44,6 @@ next-env.d.ts
 backend/venv/
 backend/*.db*
 __pycache__/
+
+.vercel
+.env*

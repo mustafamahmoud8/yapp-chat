@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface AuthHeaderProps {
   title: string;
   subtitle?: string;
@@ -13,13 +11,14 @@ export default function AuthHeader({
 }: AuthHeaderProps) {
   return (
     <div className="text-center mb-8">
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src="/logo.avif"
         alt="Yapp logo"
         width={64}
         height={64}
-        priority
         className="mx-auto mb-4 rounded-2xl object-cover"
+        style={{ width: 64, height: 64 }}
       />
       <h1
         className="text-2xl font-bold"
